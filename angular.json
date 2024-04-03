@@ -137,18 +137,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-long-press2-demo:build"
+            "buildTarget": "ngx-long-press2-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-long-press2-demo:build:production"
+              "buildTarget": "ngx-long-press2-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-long-press2-demo:build"
+            "buildTarget": "ngx-long-press2-demo:build"
           }
         },
         "test": {
@@ -208,7 +208,7 @@
           "defaultConfiguration": ""
         },
         "serve-ssr": {
-          "builder": "@nguniversal/builders:ssr-dev-server",
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
           "options": {
             "browserTarget": "ngx-long-press2-demo:build",
             "serverTarget": "ngx-long-press2-demo:server"
@@ -221,7 +221,7 @@
           }
         },
         "prerender_ghpages": {
-          "builder": "@nguniversal/builders:prerender",
+          "builder": "@angular-devkit/build-angular:prerender",
           "options": {
             "browserTarget": "ngx-long-press2-demo:build_ghpages:production",
             "serverTarget": "ngx-long-press2-demo:server:production",
@@ -234,7 +234,7 @@
           }
         },
         "prerender": {
-          "builder": "@nguniversal/builders:prerender",
+          "builder": "@angular-devkit/build-angular:prerender",
           "options": {
             "browserTarget": "ngx-long-press2-demo:build:production",
             "serverTarget": "ngx-long-press2-demo:server:production",
